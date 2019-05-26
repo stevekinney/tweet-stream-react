@@ -1,7 +1,7 @@
-$button-color: #c6d8d3;
+$button-color: rgb(28, 209, 83);
 $danger-color: #f0544f;
-$control-color: #197278;
-$font-color: #283d3b;
+$control-color: #c79528;
+$font-color: #28283d;
 
 @mixin input-style($color) {
   background-color: $color;
@@ -87,7 +87,8 @@ input[type='submit'] {
   h1 {
     text-align: center;
   }
-  margin: 0.5em;
+  margin: 0.5em auto;
+  max-width: 600px;
 }
 
 .Tweet {

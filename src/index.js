@@ -4,16 +4,21 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-import rootReducer from './reducers';
+import reducer from './reducer';
+
+import FetchTweets from './FetchTweets';
+import Tweets from './Tweets';
 
 import './styles.scss';
 
-const store = createStore(rootReducer);
+const store = createStore(reducer);
 
 const Application = () => {
   return (
     <div className="Application">
       <h1>Tweet Stream</h1>
+      <FetchTweets />
+      <Tweets />
     </div>
   );
 };
